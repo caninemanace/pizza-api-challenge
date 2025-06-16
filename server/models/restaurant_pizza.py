@@ -18,3 +18,11 @@ class RestaurantPizza(db.Model):
         if not (1 <= value <= 30):
             raise ValueError("Price must be between 1 and 30")
         return value
+
+    def to_dict(self):
+        return {
+            "id": self.id,
+            "price": self.price,
+            "pizza": self.pizza.to_dict(),  # nested pizza info
+            "restaurant_id": self.restaurant_id
+        }
