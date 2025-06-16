@@ -14,7 +14,7 @@ A simple RESTful API for managing restaurants, pizzas, and their relationships, 
 
 2. **Install dependencies using Pipenv**
    ```sh
-   pip install Flask Flask-SQLAlchemy Flask-Migrate SQLAlchemy python-dotenv
+   pipenv install Flask Flask-SQLAlchemy Flask-Migrate SQLAlchemy python-dotenv
    ```
    
 3. **Activate the virtual environment**
@@ -25,7 +25,7 @@ A simple RESTful API for managing restaurants, pizzas, and their relationships, 
 4. **Set environment variables**
    - Ensure `.env` contains:
      ```sh
-    FLASK_APP=app.py
+     FLASK_APP=app.py
      FLASK_ENV=development
      ```
 
